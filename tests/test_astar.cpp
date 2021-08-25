@@ -1,4 +1,4 @@
-﻿#include "test.h"
+﻿#include "tests/test.h"
 
 #include "astar/astar.h"
 

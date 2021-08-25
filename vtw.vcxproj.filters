@@ -8,6 +8,9 @@
     <ClCompile Include="tests\test_astar.cpp">
       <Filter>tests</Filter>
     </ClCompile>
+    <ClCompile Include="tests\test_timewheel.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="astar">
@@ -16,6 +19,9 @@
     <Filter Include="tests">
       <UniqueIdentifier>{a68693b0-1faf-4740-9f2c-bb3706f19d12}</UniqueIdentifier>
     </Filter>
+    <Filter Include="timewheel">
+      <UniqueIdentifier>{78334306-78d3-4e3c-a30a-2b54cdb142c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="astar\astar.h">
@@ -23,6 +29,15 @@
     </ClInclude>
     <ClInclude Include="tests\test.h">
       <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="timewheel\locked_queue.h">
+      <Filter>timewheel</Filter>
+    </ClInclude>
+    <ClInclude Include="timewheel\thread_pool.h">
+      <Filter>timewheel</Filter>
+    </ClInclude>
+    <ClInclude Include="timewheel\timewheel.h">
+      <Filter>timewheel</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
