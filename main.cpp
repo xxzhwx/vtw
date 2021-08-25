@@ -1,7 +1,8 @@
 ﻿#include <stdio.h>
+#include "tests/test.h"
 
 int main(int argc, char* argv[])
 {
-    printf("Hello, World!\n");
+    Test_AStar();
     return 0;
 }
