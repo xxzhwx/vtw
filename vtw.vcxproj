@@ -20,12 +20,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="astar\astar.cpp" />
+    <ClCompile Include="base\countdownlatch.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="tests\test_astar.cpp" />
     <ClCompile Include="tests\test_timewheel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="astar\astar.h" />
+    <ClInclude Include="base\countdownlatch.h" />
+    <ClInclude Include="base\noncopyable.h" />
+    <ClInclude Include="base\singleton.h" />
     <ClInclude Include="tests\test.h" />
     <ClInclude Include="timewheel\locked_queue.h" />
     <ClInclude Include="timewheel\thread_pool.h" />

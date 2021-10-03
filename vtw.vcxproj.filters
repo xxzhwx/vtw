@@ -11,6 +11,9 @@
     <ClCompile Include="tests\test_timewheel.cpp">
       <Filter>tests</Filter>
     </ClCompile>
+    <ClCompile Include="base\countdownlatch.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="astar">
@@ -21,6 +24,9 @@
     </Filter>
     <Filter Include="timewheel">
       <UniqueIdentifier>{78334306-78d3-4e3c-a30a-2b54cdb142c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{04d948c9-f677-4125-b0b3-faab8008aeb4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -38,6 +44,15 @@
     </ClInclude>
     <ClInclude Include="timewheel\timewheel.h">
       <Filter>timewheel</Filter>
+    </ClInclude>
+    <ClInclude Include="base\noncopyable.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\singleton.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\countdownlatch.h">
+      <Filter>base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
