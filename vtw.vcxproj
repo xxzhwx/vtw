@@ -22,14 +22,23 @@
     <ClCompile Include="astar\astar.cpp" />
     <ClCompile Include="base\countdownlatch.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="net\channel.cpp" />
+    <ClCompile Include="net\poller.cpp" />
+    <ClCompile Include="net\selectpoller.cpp" />
     <ClCompile Include="tests\test_astar.cpp" />
     <ClCompile Include="tests\test_timewheel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="astar\astar.h" />
     <ClInclude Include="base\countdownlatch.h" />
+    <ClInclude Include="base\lockedqueue.h" />
     <ClInclude Include="base\noncopyable.h" />
     <ClInclude Include="base\singleton.h" />
+    <ClInclude Include="base\threadpool.h" />
+    <ClInclude Include="net\channel.h" />
+    <ClInclude Include="net\poller.h" />
+    <ClInclude Include="net\selectpoller.h" />
+    <ClInclude Include="net\socketdatatype.h" />
     <ClInclude Include="tests\test.h" />
     <ClInclude Include="timewheel\locked_queue.h" />
     <ClInclude Include="timewheel\thread_pool.h" />
@@ -126,6 +135,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>WS2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

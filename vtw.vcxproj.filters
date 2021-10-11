@@ -14,6 +14,15 @@
     <ClCompile Include="base\countdownlatch.cpp">
       <Filter>base</Filter>
     </ClCompile>
+    <ClCompile Include="net\poller.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\selectpoller.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\channel.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="astar">
@@ -27,6 +36,9 @@
     </Filter>
     <Filter Include="base">
       <UniqueIdentifier>{04d948c9-f677-4125-b0b3-faab8008aeb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{794661da-b112-43ce-961c-383f95fc34c7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -53,6 +65,24 @@
     </ClInclude>
     <ClInclude Include="base\countdownlatch.h">
       <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="net\poller.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\channel.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="base\threadpool.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\lockedqueue.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="net\selectpoller.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\socketdatatype.h">
+      <Filter>net</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
