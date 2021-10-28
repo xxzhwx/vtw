@@ -21,6 +21,9 @@
   <ItemGroup>
     <ClCompile Include="astar\astar.cpp" />
     <ClCompile Include="base\countdownlatch.cpp" />
+    <ClCompile Include="base\file.cpp" />
+    <ClCompile Include="base\systemtime.cpp" />
+    <ClCompile Include="base\tick.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="net\channel.cpp" />
     <ClCompile Include="net\poller.cpp" />
@@ -31,10 +34,14 @@
   <ItemGroup>
     <ClInclude Include="astar\astar.h" />
     <ClInclude Include="base\countdownlatch.h" />
+    <ClInclude Include="base\file.h" />
     <ClInclude Include="base\lockedqueue.h" />
+    <ClInclude Include="base\macro.h" />
     <ClInclude Include="base\noncopyable.h" />
     <ClInclude Include="base\singleton.h" />
+    <ClInclude Include="base\systemtime.h" />
     <ClInclude Include="base\threadpool.h" />
+    <ClInclude Include="base\tick.h" />
     <ClInclude Include="net\channel.h" />
     <ClInclude Include="net\poller.h" />
     <ClInclude Include="net\selectpoller.h" />

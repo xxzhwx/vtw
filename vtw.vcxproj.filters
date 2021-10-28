@@ -23,6 +23,15 @@
     <ClCompile Include="net\channel.cpp">
       <Filter>net</Filter>
     </ClCompile>
+    <ClCompile Include="base\tick.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\systemtime.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\file.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="astar">
@@ -83,6 +92,18 @@
     </ClInclude>
     <ClInclude Include="net\socketdatatype.h">
       <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tick.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\systemtime.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\macro.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\file.h">
+      <Filter>base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
