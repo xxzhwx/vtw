@@ -26,11 +26,13 @@
     <ClCompile Include="base\tick.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="tests\test_astar.cpp" />
+    <ClCompile Include="tests\test_bytebuffer.cpp" />
     <ClCompile Include="tests\test_libcurl.cpp" />
     <ClCompile Include="tests\test_timewheel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="astar\astar.h" />
+    <ClInclude Include="base\bytebuffer.h" />
     <ClInclude Include="base\countdownlatch.h" />
     <ClInclude Include="base\file.h" />
     <ClInclude Include="base\lockedqueue.h" />

@@ -27,7 +27,7 @@ public:
     void Put(T&& t)
     {
         std::lock_guard<std::mutex> guard(_m);
-        _q.emplace_back(std::move(t)); // std::move is more specific than std:forward
+        _q.emplace_back(std::move(t));
         _cv.notify_one();
     }
 

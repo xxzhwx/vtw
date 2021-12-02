@@ -26,6 +26,9 @@
     <ClCompile Include="tests\test_libcurl.cpp">
       <Filter>tests</Filter>
     </ClCompile>
+    <ClCompile Include="tests\test_bytebuffer.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="astar">
@@ -85,6 +88,9 @@
       <Filter>base</Filter>
     </ClInclude>
     <ClInclude Include="base\file.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\bytebuffer.h">
       <Filter>base</Filter>
     </ClInclude>
   </ItemGroup>
