@@ -4,6 +4,8 @@
 int main(int argc, char* argv[])
 {
     //Test_AStar();
-    Test_TimeWheel();
+    //Test_TimeWheel();
+    //Test_LibCurl();
+
     return 0;
 }

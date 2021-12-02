@@ -14,15 +14,6 @@
     <ClCompile Include="base\countdownlatch.cpp">
       <Filter>base</Filter>
     </ClCompile>
-    <ClCompile Include="net\poller.cpp">
-      <Filter>net</Filter>
-    </ClCompile>
-    <ClCompile Include="net\selectpoller.cpp">
-      <Filter>net</Filter>
-    </ClCompile>
-    <ClCompile Include="net\channel.cpp">
-      <Filter>net</Filter>
-    </ClCompile>
     <ClCompile Include="base\tick.cpp">
       <Filter>base</Filter>
     </ClCompile>
@@ -31,6 +22,9 @@
     </ClCompile>
     <ClCompile Include="base\file.cpp">
       <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_libcurl.cpp">
+      <Filter>tests</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -75,23 +69,11 @@
     <ClInclude Include="base\countdownlatch.h">
       <Filter>base</Filter>
     </ClInclude>
-    <ClInclude Include="net\poller.h">
-      <Filter>net</Filter>
-    </ClInclude>
-    <ClInclude Include="net\channel.h">
-      <Filter>net</Filter>
-    </ClInclude>
     <ClInclude Include="base\threadpool.h">
       <Filter>base</Filter>
     </ClInclude>
     <ClInclude Include="base\lockedqueue.h">
       <Filter>base</Filter>
-    </ClInclude>
-    <ClInclude Include="net\selectpoller.h">
-      <Filter>net</Filter>
-    </ClInclude>
-    <ClInclude Include="net\socketdatatype.h">
-      <Filter>net</Filter>
     </ClInclude>
     <ClInclude Include="base\tick.h">
       <Filter>base</Filter>

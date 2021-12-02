@@ -25,10 +25,8 @@
     <ClCompile Include="base\systemtime.cpp" />
     <ClCompile Include="base\tick.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="net\channel.cpp" />
-    <ClCompile Include="net\poller.cpp" />
-    <ClCompile Include="net\selectpoller.cpp" />
     <ClCompile Include="tests\test_astar.cpp" />
+    <ClCompile Include="tests\test_libcurl.cpp" />
     <ClCompile Include="tests\test_timewheel.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -42,10 +40,6 @@
     <ClInclude Include="base\systemtime.h" />
     <ClInclude Include="base\threadpool.h" />
     <ClInclude Include="base\tick.h" />
-    <ClInclude Include="net\channel.h" />
-    <ClInclude Include="net\poller.h" />
-    <ClInclude Include="net\selectpoller.h" />
-    <ClInclude Include="net\socketdatatype.h" />
     <ClInclude Include="tests\test.h" />
     <ClInclude Include="timewheel\locked_queue.h" />
     <ClInclude Include="timewheel\thread_pool.h" />
@@ -135,14 +129,16 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)deps\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>WS2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Ws2_32.lib;Wldap32.lib;Advapi32.lib;user32.lib;Crypt32.lib;libcurl_a_debug.lib;libcrypto.lib;libssl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)deps\lib\win;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
