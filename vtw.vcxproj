@@ -28,6 +28,7 @@
     <ClCompile Include="tests\test_astar.cpp" />
     <ClCompile Include="tests\test_bytebuffer.cpp" />
     <ClCompile Include="tests\test_libcurl.cpp" />
+    <ClCompile Include="tests\test_libuv.cpp" />
     <ClCompile Include="tests\test_timewheel.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -139,8 +140,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>Ws2_32.lib;Wldap32.lib;Advapi32.lib;user32.lib;Crypt32.lib;libcurl_a_debug.lib;libcrypto.lib;libssl.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)deps\lib\win;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;Wldap32.lib;Advapi32.lib;user32.lib;Crypt32.lib;libcurl_a_debug.lib;libcrypto.lib;libssl.lib;Iphlpapi.lib;userenv.lib;uv_a.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)deps\lib\win\x64\MTd\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
