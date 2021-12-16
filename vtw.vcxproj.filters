@@ -96,5 +96,8 @@
     <ClInclude Include="base\bytebuffer.h">
       <Filter>base</Filter>
     </ClInclude>
+    <ClInclude Include="base\scopeguard.h">
+      <Filter>base</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

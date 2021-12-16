@@ -39,6 +39,7 @@
     <ClInclude Include="base\lockedqueue.h" />
     <ClInclude Include="base\macro.h" />
     <ClInclude Include="base\noncopyable.h" />
+    <ClInclude Include="base\scopeguard.h" />
     <ClInclude Include="base\singleton.h" />
     <ClInclude Include="base\systemtime.h" />
     <ClInclude Include="base\threadpool.h" />
